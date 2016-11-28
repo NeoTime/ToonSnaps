@@ -12,9 +12,14 @@
 		94CC50321DEBD1E9001A5057 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94CC50301DEBD1E9001A5057 /* Main.storyboard */; };
 		94CC50341DEBD1E9001A5057 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94CC50331DEBD1E9001A5057 /* Assets.xcassets */; };
 		94CC50371DEBD1E9001A5057 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94CC50351DEBD1E9001A5057 /* LaunchScreen.storyboard */; };
+		94CC503F1DEBD9F3001A5057 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94CC503E1DEBD9F3001A5057 /* GoogleService-Info.plist */; };
+		BB1579ECD9C7C615CAC4BCE7 /* Pods_ToonSnaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 333D16EC2495EFDC48E2DF08 /* Pods_ToonSnaps.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		333D16EC2495EFDC48E2DF08 /* Pods_ToonSnaps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToonSnaps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44BF44B18B8AAC82535932E6 /* Pods-ToonSnaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToonSnaps.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToonSnaps/Pods-ToonSnaps.release.xcconfig"; sourceTree = "<group>"; };
+		48A1E7C5D135A7FF18BB8DDB /* Pods-ToonSnaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToonSnaps.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToonSnaps/Pods-ToonSnaps.debug.xcconfig"; sourceTree = "<group>"; };
 		94CC50291DEBD1E9001A5057 /* ToonSnaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToonSnaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94CC502C1DEBD1E9001A5057 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94CC502E1DEBD1E9001A5057 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		94CC50331DEBD1E9001A5057 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94CC50361DEBD1E9001A5057 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94CC50381DEBD1E9001A5057 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94CC503E1DEBD9F3001A5057 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB1579ECD9C7C615CAC4BCE7 /* Pods_ToonSnaps.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		215A7F5D537540DE94FBED43 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				48A1E7C5D135A7FF18BB8DDB /* Pods-ToonSnaps.debug.xcconfig */,
+				44BF44B18B8AAC82535932E6 /* Pods-ToonSnaps.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		391EFA733D53B1136208A112 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				333D16EC2495EFDC48E2DF08 /* Pods_ToonSnaps.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		94CC50201DEBD1E9001A5057 = {
 			isa = PBXGroup;
 			children = (
 				94CC502B1DEBD1E9001A5057 /* ToonSnaps */,
 				94CC502A1DEBD1E9001A5057 /* Products */,
+				215A7F5D537540DE94FBED43 /* Pods */,
+				391EFA733D53B1136208A112 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +86,7 @@
 				94CC50331DEBD1E9001A5057 /* Assets.xcassets */,
 				94CC50351DEBD1E9001A5057 /* LaunchScreen.storyboard */,
 				94CC50381DEBD1E9001A5057 /* Info.plist */,
+				94CC503E1DEBD9F3001A5057 /* GoogleService-Info.plist */,
 			);
 			path = ToonSnaps;
 			sourceTree = "<group>";
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94CC503B1DEBD1E9001A5057 /* Build configuration list for PBXNativeTarget "ToonSnaps" */;
 			buildPhases = (
+				E6976A360F2A9C282ACDDE9A /* [CP] Check Pods Manifest.lock */,
 				94CC50251DEBD1E9001A5057 /* Sources */,
 				94CC50261DEBD1E9001A5057 /* Frameworks */,
 				94CC50271DEBD1E9001A5057 /* Resources */,
+				D7F32EB4FCA6D3E89D6A59B4 /* [CP] Embed Pods Frameworks */,
+				48F7C6D88B9190B25C3890B6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,12 +155,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				94CC50371DEBD1E9001A5057 /* LaunchScreen.storyboard in Resources */,
+				94CC503F1DEBD9F3001A5057 /* GoogleService-Info.plist in Resources */,
 				94CC50341DEBD1E9001A5057 /* Assets.xcassets in Resources */,
 				94CC50321DEBD1E9001A5057 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48F7C6D88B9190B25C3890B6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToonSnaps/Pods-ToonSnaps-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7F32EB4FCA6D3E89D6A59B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToonSnaps/Pods-ToonSnaps-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6976A360F2A9C282ACDDE9A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		94CC50251DEBD1E9001A5057 /* Sources */ = {
@@ -259,6 +338,7 @@
 		};
 		94CC503C1DEBD1E9001A5057 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48A1E7C5D135A7FF18BB8DDB /* Pods-ToonSnaps.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9B6L668UHZ;
@@ -272,6 +352,7 @@
 		};
 		94CC503D1DEBD1E9001A5057 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44BF44B18B8AAC82535932E6 /* Pods-ToonSnaps.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9B6L668UHZ;
