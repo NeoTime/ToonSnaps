@@ -7,5 +7,8 @@ target 'ToonSnaps' do
 
   # Pods for ToonSnaps
 pod 'Firebase/Core'
+pod 'Firebase/Auth'
+pod 'Firebase/Database'
+pod 'Firebase/Storage'
 
 end
