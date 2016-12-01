@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		94CC502D1DEBD1E9001A5057 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CC502C1DEBD1E9001A5057 /* AppDelegate.swift */; };
-		94CC502F1DEBD1E9001A5057 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CC502E1DEBD1E9001A5057 /* ViewController.swift */; };
+		94CC502F1DEBD1E9001A5057 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CC502E1DEBD1E9001A5057 /* SignInViewController.swift */; };
 		94CC50321DEBD1E9001A5057 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94CC50301DEBD1E9001A5057 /* Main.storyboard */; };
 		94CC50341DEBD1E9001A5057 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94CC50331DEBD1E9001A5057 /* Assets.xcassets */; };
 		94CC50371DEBD1E9001A5057 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94CC50351DEBD1E9001A5057 /* LaunchScreen.storyboard */; };
 		94CC503F1DEBD9F3001A5057 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94CC503E1DEBD9F3001A5057 /* GoogleService-Info.plist */; };
+		94E28BEF1DEEB45200BD9325 /* SnapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E28BEE1DEEB45200BD9325 /* SnapsViewController.swift */; };
+		94E28BF11DEEC05000BD9325 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E28BF01DEEC05000BD9325 /* PictureViewController.swift */; };
+		94E28BF31DF0137800BD9325 /* SelectUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E28BF21DF0137800BD9325 /* SelectUserViewController.swift */; };
 		BB1579ECD9C7C615CAC4BCE7 /* Pods_ToonSnaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 333D16EC2495EFDC48E2DF08 /* Pods_ToonSnaps.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,12 +25,16 @@
 		48A1E7C5D135A7FF18BB8DDB /* Pods-ToonSnaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToonSnaps.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToonSnaps/Pods-ToonSnaps.debug.xcconfig"; sourceTree = "<group>"; };
 		94CC50291DEBD1E9001A5057 /* ToonSnaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToonSnaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94CC502C1DEBD1E9001A5057 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		94CC502E1DEBD1E9001A5057 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		94CC502E1DEBD1E9001A5057 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		94CC50311DEBD1E9001A5057 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94CC50331DEBD1E9001A5057 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94CC50361DEBD1E9001A5057 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94CC50381DEBD1E9001A5057 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94CC503E1DEBD9F3001A5057 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		94E28BED1DEEB32300BD9325 /* ToonSnaps.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ToonSnaps.entitlements; sourceTree = "<group>"; };
+		94E28BEE1DEEB45200BD9325 /* SnapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapsViewController.swift; sourceTree = "<group>"; };
+		94E28BF01DEEC05000BD9325 /* PictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
+		94E28BF21DF0137800BD9325 /* SelectUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectUserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +87,12 @@
 		94CC502B1DEBD1E9001A5057 /* ToonSnaps */ = {
 			isa = PBXGroup;
 			children = (
+				94E28BED1DEEB32300BD9325 /* ToonSnaps.entitlements */,
 				94CC502C1DEBD1E9001A5057 /* AppDelegate.swift */,
-				94CC502E1DEBD1E9001A5057 /* ViewController.swift */,
+				94CC502E1DEBD1E9001A5057 /* SignInViewController.swift */,
+				94E28BEE1DEEB45200BD9325 /* SnapsViewController.swift */,
+				94E28BF01DEEC05000BD9325 /* PictureViewController.swift */,
+				94E28BF21DF0137800BD9325 /* SelectUserViewController.swift */,
 				94CC50301DEBD1E9001A5057 /* Main.storyboard */,
 				94CC50331DEBD1E9001A5057 /* Assets.xcassets */,
 				94CC50351DEBD1E9001A5057 /* LaunchScreen.storyboard */,
@@ -128,6 +139,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 9B6L668UHZ;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -216,8 +232,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94CC502F1DEBD1E9001A5057 /* ViewController.swift in Sources */,
+				94CC502F1DEBD1E9001A5057 /* SignInViewController.swift in Sources */,
+				94E28BF11DEEC05000BD9325 /* PictureViewController.swift in Sources */,
+				94E28BF31DF0137800BD9325 /* SelectUserViewController.swift in Sources */,
 				94CC502D1DEBD1E9001A5057 /* AppDelegate.swift in Sources */,
+				94E28BEF1DEEB45200BD9325 /* SnapsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +280,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -311,6 +331,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -341,6 +362,7 @@
 			baseConfigurationReference = 48A1E7C5D135A7FF18BB8DDB /* Pods-ToonSnaps.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ToonSnaps/ToonSnaps.entitlements;
 				DEVELOPMENT_TEAM = 9B6L668UHZ;
 				INFOPLIST_FILE = ToonSnaps/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -355,6 +377,7 @@
 			baseConfigurationReference = 44BF44B18B8AAC82535932E6 /* Pods-ToonSnaps.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ToonSnaps/ToonSnaps.entitlements;
 				DEVELOPMENT_TEAM = 9B6L668UHZ;
 				INFOPLIST_FILE = ToonSnaps/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -383,6 +406,7 @@
 				94CC503D1DEBD1E9001A5057 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

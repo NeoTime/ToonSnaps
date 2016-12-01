@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SignInViewController.swift
 //  ToonSnaps
 //
 //  Created by Jefferey Rigler on 11/27/16.
@@ -11,11 +11,13 @@ import Firebase
 import FirebaseAuth
 
 
-class ViewController: UIViewController {
+class SignInViewController: UIViewController {
+    
     
     
     @IBOutlet weak var emailTextField: UITextField!
     
+   
     @IBOutlet weak var passwordTextField: UITextField!
     
     override func viewDidLoad() {
@@ -30,7 +32,23 @@ class ViewController: UIViewController {
             print("We Tried to Sign In")
             if error != nil {
                 print("We have an error:\(error)")
+                
+                FIRAuth.auth()?.createUser(withEmail: self.emailTextField.text!, password: self.passwordTextField.text!, completion: { (user, error) in
+                    print("We tried to create a USER")
+                    if error != nil {
+                        print("We have an error:\(error)")
+                    } else {
+                        print("Created, User, Successfully!")
+                        self.performSegue(withIdentifier: "signinsegue", sender: nil)
+                    }
+                    
+                })
+                
+            } else {
+                print("Signed in Successfully")
+                self.performSegue(withIdentifier: "signinsegue", sender: nil)
             }
+           
         })
         
         
