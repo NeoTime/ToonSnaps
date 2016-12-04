@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		947ADFCB1DF4B60600AC43C6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947ADFCA1DF4B60600AC43C6 /* User.swift */; };
 		94CC502D1DEBD1E9001A5057 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CC502C1DEBD1E9001A5057 /* AppDelegate.swift */; };
 		94CC502F1DEBD1E9001A5057 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CC502E1DEBD1E9001A5057 /* SignInViewController.swift */; };
 		94CC50321DEBD1E9001A5057 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94CC50301DEBD1E9001A5057 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		333D16EC2495EFDC48E2DF08 /* Pods_ToonSnaps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToonSnaps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44BF44B18B8AAC82535932E6 /* Pods-ToonSnaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToonSnaps.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToonSnaps/Pods-ToonSnaps.release.xcconfig"; sourceTree = "<group>"; };
 		48A1E7C5D135A7FF18BB8DDB /* Pods-ToonSnaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToonSnaps.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToonSnaps/Pods-ToonSnaps.debug.xcconfig"; sourceTree = "<group>"; };
+		947ADFCA1DF4B60600AC43C6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		94CC50291DEBD1E9001A5057 /* ToonSnaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToonSnaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94CC502C1DEBD1E9001A5057 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94CC502E1DEBD1E9001A5057 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		947ADFCC1DF4B67000AC43C6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				94E28BEE1DEEB45200BD9325 /* SnapsViewController.swift */,
+				94E28BF01DEEC05000BD9325 /* PictureViewController.swift */,
+				94E28BF21DF0137800BD9325 /* SelectUserViewController.swift */,
+				94CC502E1DEBD1E9001A5057 /* SignInViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		947ADFCD1DF4B6D700AC43C6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				947ADFCA1DF4B60600AC43C6 /* User.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		94CC50201DEBD1E9001A5057 = {
 			isa = PBXGroup;
 			children = (
@@ -87,12 +108,10 @@
 		94CC502B1DEBD1E9001A5057 /* ToonSnaps */ = {
 			isa = PBXGroup;
 			children = (
+				947ADFCD1DF4B6D700AC43C6 /* Models */,
+				947ADFCC1DF4B67000AC43C6 /* ViewControllers */,
 				94E28BED1DEEB32300BD9325 /* ToonSnaps.entitlements */,
 				94CC502C1DEBD1E9001A5057 /* AppDelegate.swift */,
-				94CC502E1DEBD1E9001A5057 /* SignInViewController.swift */,
-				94E28BEE1DEEB45200BD9325 /* SnapsViewController.swift */,
-				94E28BF01DEEC05000BD9325 /* PictureViewController.swift */,
-				94E28BF21DF0137800BD9325 /* SelectUserViewController.swift */,
 				94CC50301DEBD1E9001A5057 /* Main.storyboard */,
 				94CC50331DEBD1E9001A5057 /* Assets.xcassets */,
 				94CC50351DEBD1E9001A5057 /* LaunchScreen.storyboard */,
@@ -234,6 +253,7 @@
 			files = (
 				94CC502F1DEBD1E9001A5057 /* SignInViewController.swift in Sources */,
 				94E28BF11DEEC05000BD9325 /* PictureViewController.swift in Sources */,
+				947ADFCB1DF4B60600AC43C6 /* User.swift in Sources */,
 				94E28BF31DF0137800BD9325 /* SelectUserViewController.swift in Sources */,
 				94CC502D1DEBD1E9001A5057 /* AppDelegate.swift in Sources */,
 				94E28BEF1DEEB45200BD9325 /* SnapsViewController.swift in Sources */,
