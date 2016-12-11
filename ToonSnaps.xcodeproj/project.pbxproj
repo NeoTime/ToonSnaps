@@ -71,10 +71,10 @@
 		947ADFCC1DF4B67000AC43C6 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				94CC502E1DEBD1E9001A5057 /* SignInViewController.swift */,
 				94E28BEE1DEEB45200BD9325 /* SnapsViewController.swift */,
 				94E28BF01DEEC05000BD9325 /* PictureViewController.swift */,
 				94E28BF21DF0137800BD9325 /* SelectUserViewController.swift */,
-				94CC502E1DEBD1E9001A5057 /* SignInViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -110,9 +110,9 @@
 			children = (
 				947ADFCD1DF4B6D700AC43C6 /* Models */,
 				947ADFCC1DF4B67000AC43C6 /* ViewControllers */,
+				94CC50301DEBD1E9001A5057 /* Main.storyboard */,
 				94E28BED1DEEB32300BD9325 /* ToonSnaps.entitlements */,
 				94CC502C1DEBD1E9001A5057 /* AppDelegate.swift */,
-				94CC50301DEBD1E9001A5057 /* Main.storyboard */,
 				94CC50331DEBD1E9001A5057 /* Assets.xcassets */,
 				94CC50351DEBD1E9001A5057 /* LaunchScreen.storyboard */,
 				94CC50381DEBD1E9001A5057 /* Info.plist */,
