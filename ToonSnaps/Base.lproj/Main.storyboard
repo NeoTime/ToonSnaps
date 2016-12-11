@@ -73,11 +73,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="127" y="37"/>
         </scene>
         <!--Snaps View Controller-->
         <scene sceneID="c4f-6O-V9F">
             <objects>
-                <viewController id="pDa-IY-Fv4" customClass="SnapsViewController" customModule="ToonSnaps" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="pDa-IY-Fv4" customClass="SnapsViewController" customModule="ToonSnaps" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tvR-qs-1zo"/>
                         <viewControllerLayoutGuide type="bottom" id="cmv-WU-lWw"/>
@@ -85,7 +86,19 @@
                     <view key="view" contentMode="scaleToFill" id="VSs-9o-s2d">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cxg-6U-6VO">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cxg-6U-6VO" secondAttribute="trailing" id="Mse-FW-KRb"/>
+                            <constraint firstItem="cxg-6U-6VO" firstAttribute="leading" secondItem="VSs-9o-s2d" secondAttribute="leading" id="Zqf-ie-roI"/>
+                            <constraint firstItem="cxg-6U-6VO" firstAttribute="top" secondItem="tvR-qs-1zo" secondAttribute="bottom" id="sUc-V1-nKx"/>
+                            <constraint firstItem="cmv-WU-lWw" firstAttribute="top" secondItem="cxg-6U-6VO" secondAttribute="bottom" id="u4R-MH-0cH"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Fgz-O2-zC6">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="8OC-dd-D9H">
@@ -99,6 +112,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="cxg-6U-6VO" id="s5n-UR-rE6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iS5-BD-GmS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -216,7 +232,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fug-yZ-k1V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="792.79999999999995" y="36.431784107946029"/>
+            <point key="canvasLocation" x="889" y="37"/>
         </scene>
     </scenes>
 </document>
