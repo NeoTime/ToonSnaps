@@ -62,6 +62,19 @@ class SnapsViewController: UIViewController, UITableViewDelegate, UITableViewDat
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let snap = snaps[indexPath.row]
+        
+        performSegue(withIdentifier: "viewsnapsegue", sender: snap)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "viewsnapsegue" {
+        let nextVC = segue.destination as! ViewSnapViewController
+        nextVC.snap = sender as! Snap 
+      }
+    }
     @IBAction func logoutTapped(_ sender: Any) {
     dismiss(animated: true, completion: nil)
 }

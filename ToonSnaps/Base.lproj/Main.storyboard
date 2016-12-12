@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -114,6 +115,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="cxg-6U-6VO" id="s5n-UR-rE6"/>
+                        <segue destination="NQF-2m-nBj" kind="show" identifier="viewsnapsegue" id="b9q-OF-Awc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iS5-BD-GmS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -182,6 +184,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rsb-2U-m5d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2447" y="36"/>
+        </scene>
+        <!--View Snap View Controller-->
+        <scene sceneID="bfz-NF-faC">
+            <objects>
+                <viewController id="NQF-2m-nBj" customClass="ViewSnapViewController" customModule="ToonSnaps" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kOd-Pa-jHd"/>
+                        <viewControllerLayoutGuide type="bottom" id="PQk-iF-CaP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pmW-XR-Fz3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is me saying hi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="noM-P0-l0S">
+                                <rect key="frame" x="21" y="636" width="333" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KRA-n3-YZz">
+                                <rect key="frame" x="26" y="74" width="323" height="552"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PQk-iF-CaP" firstAttribute="top" secondItem="noM-P0-l0S" secondAttribute="bottom" constant="10" id="6qL-av-EIJ"/>
+                            <constraint firstItem="noM-P0-l0S" firstAttribute="leading" secondItem="pmW-XR-Fz3" secondAttribute="leadingMargin" constant="5" id="IIU-Zb-7gw"/>
+                            <constraint firstItem="noM-P0-l0S" firstAttribute="top" secondItem="KRA-n3-YZz" secondAttribute="bottom" constant="10" id="aaa-J8-ueQ"/>
+                            <constraint firstItem="KRA-n3-YZz" firstAttribute="leading" secondItem="pmW-XR-Fz3" secondAttribute="leadingMargin" constant="10" id="rPY-5p-5qt"/>
+                            <constraint firstItem="KRA-n3-YZz" firstAttribute="top" secondItem="kOd-Pa-jHd" secondAttribute="bottom" constant="10" id="t5a-Ip-hR0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KRA-n3-YZz" secondAttribute="trailing" constant="10" id="uPd-S6-KTw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="noM-P0-l0S" secondAttribute="trailing" constant="5" id="zwG-w5-MQa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="KRA-n3-YZz" id="dZY-XQ-2z7"/>
+                        <outlet property="label" destination="noM-P0-l0S" id="hhk-xs-iEe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u4K-Qj-4WN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1734" y="824"/>
         </scene>
         <!--Select User View Controller-->
         <scene sceneID="lJZ-AL-8RN">
